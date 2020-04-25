@@ -1,0 +1,9 @@
+25.04.2020 03:58:19  Connection failed: Unknown database 'php7lessonss'
+25.04.2020 04:09:11  [START TRANSACTION] USER REGISTRATION
+25.04.2020 04:09:11  0
+25.04.2020 04:09:42  [START TRANSACTION] USER REGISTRATION
+25.04.2020 04:09:42  0
+25.04.2020 04:11:45  [START TRANSACTION] USER REGISTRATION
+25.04.2020 04:11:45  [ROLLBACK]	  Ошибка регистрации пользователя <s>: [1062] Duplicate entry 's-s' for key 'users.unique_user'
+25.04.2020 04:15:10  ERROR! Failed to load containers: [1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'B container_sort_order' at line 1
+25.04.2020 04:16:33  ERROR! Failed to load articles: [1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'B article_sort_order' at line 1

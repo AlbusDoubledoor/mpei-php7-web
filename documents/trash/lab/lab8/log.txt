@@ -1,0 +1,104 @@
+06.04.2020 16:25:37:  Error creating database: Can't create database 'a08'; database exists
+06.04.2020 16:25:37:  Changed to a08 successfully
+06.04.2020 16:25:37:  Error creating table: Table 'koval_lab8' already exists
+06.04.2020 16:25:39:  Error creating database: Can't create database 'a08'; database exists
+06.04.2020 16:25:39:  Changed to a08 successfully
+06.04.2020 16:25:39:  Error creating table: Table 'koval_lab8' already exists
+06.04.2020 16:28:55:  Database a08 created successfully
+06.04.2020 16:28:55:  Changed to a08 successfully
+06.04.2020 16:28:55:  Table koval_lab8 (id int auto_increment primary key, lastname varchar(255), firstname varchar(255),sex varchar(255),salary varchar(255),resume text) ENGINE=MyISAM DEFAULT CHARSET=utf8 created successfully
+06.04.2020 16:28:57:  Error creating database: Can't create database 'a08'; database exists
+06.04.2020 16:28:57:  Changed to a08 successfully
+06.04.2020 16:28:57:  Error creating table: Table 'koval_lab8' already exists
+06.04.2020 16:32:15:  Error creating database: Can't create database 'a08'; database exists
+06.04.2020 16:32:15:  Changed to a08 successfully
+06.04.2020 16:32:15:  Error creating table: Table 'koval_lab8' already exists
+06.04.2020 16:32:16:  Error creating database: Can't create database 'a08'; database exists
+06.04.2020 16:32:16:  Changed to a08 successfully
+06.04.2020 16:32:16:  Error creating table: Table 'koval_lab8' already exists
+06.04.2020 16:34:22:  Error creating database: Can't create database 'a08'; database exists
+06.04.2020 16:34:22:  Changed to a08 successfully
+06.04.2020 16:34:22:  Error creating table: Table 'koval_lab8' already exists
+06.04.2020 16:34:23:  Error creating database: Can't create database 'a08'; database exists
+06.04.2020 16:34:23:  Changed to a08 successfully
+06.04.2020 16:34:23:  Error creating table: Table 'koval_lab8' already exists
+06.04.2020 16:35:19:  Error creating database: Can't create database 'a08'; database exists
+06.04.2020 16:35:19:  Changed to a08 successfully
+06.04.2020 16:35:19:  Error creating table: Table 'koval_lab8' already exists
+06.04.2020 16:35:21:  Error creating database: Can't create database 'a08'; database exists
+06.04.2020 16:35:21:  Changed to a08 successfully
+06.04.2020 16:35:21:  Error creating table: Table 'koval_lab8' already exists
+06.04.2020 16:35:27:  Error creating database: Can't create database 'a08'; database exists
+06.04.2020 16:35:27:  Changed to a08 successfully
+06.04.2020 16:35:27:  Error creating table: Table 'koval_lab8' already exists
+06.04.2020 16:35:27:  Successfully deleted record from koval_lab8 with id = 3
+06.04.2020 16:35:31:  Error creating database: Can't create database 'a08'; database exists
+06.04.2020 16:35:31:  Changed to a08 successfully
+06.04.2020 16:35:31:  Error creating table: Table 'koval_lab8' already exists
+06.04.2020 16:35:38:  Error creating database: Can't create database 'a08'; database exists
+06.04.2020 16:35:38:  Changed to a08 successfully
+06.04.2020 16:35:38:  Error creating table: Table 'koval_lab8' already exists
+06.04.2020 16:35:38:  Successfully inserted values into koval_lab8
+06.04.2020 16:35:45:  Error creating database: Can't create database 'a08'; database exists
+06.04.2020 16:35:45:  Changed to a08 successfully
+06.04.2020 16:35:45:  Error creating table: Table 'koval_lab8' already exists
+06.04.2020 21:00:40:  Error creating database: Can't create database 'a08'; database exists
+06.04.2020 21:00:40:  Changed to a08 successfully
+06.04.2020 21:00:40:  Error creating table: Table 'koval_lab8' already exists
+06.04.2020 21:00:44:  Error creating database: Can't create database 'a08'; database exists
+06.04.2020 21:00:44:  Changed to a08 successfully
+06.04.2020 21:00:44:  Error creating table: Table 'koval_lab8' already exists
+06.04.2020 21:00:52:  Error creating database: Can't create database 'a08'; database exists
+06.04.2020 21:00:52:  Changed to a08 successfully
+06.04.2020 21:00:52:  Error creating table: Table 'koval_lab8' already exists
+06.04.2020 21:00:52:  Successfully updated record from koval_lab8 with id = 6
+06.04.2020 21:00:58:  Error creating database: Can't create database 'a08'; database exists
+06.04.2020 21:00:58:  Changed to a08 successfully
+06.04.2020 21:00:58:  Error creating table: Table 'koval_lab8' already exists
+06.04.2020 21:00:58:  Successfully updated record from koval_lab8 with id = 6
+06.04.2020 21:01:03:  Error creating database: Can't create database 'a08'; database exists
+06.04.2020 21:01:03:  Changed to a08 successfully
+06.04.2020 21:01:03:  Error creating table: Table 'koval_lab8' already exists
+06.04.2020 21:01:10:  Error creating database: Can't create database 'a08'; database exists
+06.04.2020 21:01:10:  Changed to a08 successfully
+06.04.2020 21:01:10:  Error creating table: Table 'koval_lab8' already exists
+06.04.2020 21:01:10:  Successfully deleted record from koval_lab8 with id = 6
+06.04.2020 21:01:14:  Error creating database: Can't create database 'a08'; database exists
+06.04.2020 21:01:14:  Changed to a08 successfully
+06.04.2020 21:01:14:  Error creating table: Table 'koval_lab8' already exists
+06.04.2020 21:01:14:  Successfully inserted values into koval_lab8
+06.04.2020 21:01:16:  Error creating database: Can't create database 'a08'; database exists
+06.04.2020 21:01:16:  Changed to a08 successfully
+06.04.2020 21:01:16:  Error creating table: Table 'koval_lab8' already exists
+06.04.2020 21:01:17:  Successfully inserted values into koval_lab8
+06.04.2020 21:01:18:  Error creating database: Can't create database 'a08'; database exists
+06.04.2020 21:01:18:  Changed to a08 successfully
+06.04.2020 21:01:18:  Error creating table: Table 'koval_lab8' already exists
+06.04.2020 21:01:18:  Successfully inserted values into koval_lab8
+06.04.2020 21:01:20:  Error creating database: Can't create database 'a08'; database exists
+06.04.2020 21:01:20:  Changed to a08 successfully
+06.04.2020 21:01:20:  Error creating table: Table 'koval_lab8' already exists
+06.04.2020 21:01:20:  Successfully inserted values into koval_lab8
+06.04.2020 21:01:22:  Error creating database: Can't create database 'a08'; database exists
+06.04.2020 21:01:22:  Changed to a08 successfully
+06.04.2020 21:01:22:  Error creating table: Table 'koval_lab8' already exists
+06.04.2020 21:01:22:  Successfully inserted values into koval_lab8
+06.04.2020 21:01:28:  Error creating database: Can't create database 'a08'; database exists
+06.04.2020 21:01:28:  Changed to a08 successfully
+06.04.2020 21:01:28:  Error creating table: Table 'koval_lab8' already exists
+06.04.2020 21:01:28:  Successfully deleted record from koval_lab8 with id = 5
+06.04.2020 21:01:38:  Error creating database: Can't create database 'a08'; database exists
+06.04.2020 21:01:38:  Changed to a08 successfully
+06.04.2020 21:01:38:  Error creating table: Table 'koval_lab8' already exists
+06.04.2020 21:01:38:  Successfully inserted values into koval_lab8
+06.04.2020 21:01:41:  Error creating database: Can't create database 'a08'; database exists
+06.04.2020 21:01:41:  Changed to a08 successfully
+06.04.2020 21:01:41:  Error creating table: Table 'koval_lab8' already exists
+06.04.2020 21:01:41:  Successfully inserted values into koval_lab8
+06.04.2020 21:01:44:  Error creating database: Can't create database 'a08'; database exists
+06.04.2020 21:01:44:  Changed to a08 successfully
+06.04.2020 21:01:44:  Error creating table: Table 'koval_lab8' already exists
+06.04.2020 21:01:44:  Successfully inserted values into koval_lab8
+06.04.2020 21:11:58:  Error creating database: Can't create database 'a08'; database exists
+06.04.2020 21:11:58:  Changed to a08 successfully
+06.04.2020 21:11:58:  Error creating table: Table 'koval_lab8' already exists

@@ -1,0 +1,15 @@
+<link rel="stylesheet" type="text/css" href="/resource/css/register_form.css">
+<textarea class='my-editor' name='article_editor'></textarea>
+<script type='text/javascript'>var article_editor = CKEDITOR.replace('article_editor');</script>
+<form enctype="multipart/form-data" action="upload.php" method="POST" target="_blank">
+    <input type="hidden" name="MAX_FILE_SIZE" value="26214400" />
+    Отправить этот файл: <input name="userfile" type="file" />
+    <input type="submit" value="Отправить файл" />
+</form>
+<div class="register-form">
+	<form id='register'>
+		<script type='text/javascript'>add_record()</script>
+	</form>
+	<button class='more-button' name='more' onclick='add_record()'>Добавить</button>
+	<button class='send-button' name='send' onclick='register()'>Отправить</button>
+</div>

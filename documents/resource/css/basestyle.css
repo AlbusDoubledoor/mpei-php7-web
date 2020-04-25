@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+
+body {
+	background-color: #e9ffe6;
+}
+
+::-webkit-scrollbar {
+	width: 5px;
+}
+
+::-webkit-scrollbar-track {
+	background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+	background: rgba(0, 0, 0, 0.25);
+	border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+	background: rgba(0, 0, 0, 0.5);
+}
+
+.mainfont {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 20px;
+	color: black;
+	letter-spacing: 0;
+	text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1), 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.skeleton-wrapper {
+	position: absolute;
+	width: 80%;
+	min-height: calc(100% - 30px);
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	margin-bottom: 15px;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 15px;
+}
+
+.header-bar {
+	background: url("../img/logo_mpei.png") no-repeat;
+	background-size: 100% 170px;
+	background-position: top;
+	background-color:  #9aff91;
+	position: absolute;
+	display: flex;
+	flex: 1;
+	align-items: flex-end;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	border-radius: 20px;
+	border: 4px double #20B2AA;
+	padding: 5px;
+	box-sizing: border-box;
+	height: 210px;
+}
+
+.item {
+	min-width: 175px;
+	height: 30px;
+	background-color: #68d15e;
+	border-radius: 10px;
+	text-align: center;
+	line-height: 26px;
+	box-sizing: border-box;
+}
+
+.item.admin-tools {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+}
+
+.header-bar .item {
+	width: calc(25% - 20px);
+	border: 2px solid #68d15e;
+}
+
+.header-bar .item:hover {
+	background-color: #e9ffe6;
+	color: black;
+	transition: background-color 0.25s;
+	cursor: pointer;
+}
+
+.header-bar .item.active {
+	background-color: #e9ffe6;
+}
+
+.nav-panel {
+	position: absolute;
+	top: 230px;
+	min-height: calc(100% - 230px);
+	border-radius: 20px;
+	border: 4px double #20B2AA;
+	left: 0px;
+	width: 25%;
+	min-width: 200px;
+	box-sizing: border-box;
+	padding: 5px;
+	margin-bottom: 15px;
+	background-color: #9aff91;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.nav-panel .item {
+	font-size: 14px;
+	text-align: left;
+	word-wrap: break-word;
+	padding-left: 5px;
+	margin-bottom: 5px;
+	border: 2px solid #68d15e;
+}
+
+.content-box {
+	position: absolute;
+	word-break: break-all;
+	left: 0px;
+	width: 100%;
+	top: 230px;
+	min-height: calc(100% - 230px);
+	padding: 10px;
+	box-sizing: border-box;
+	border-radius: 20px;
+	border: 4px double #20B2AA;
+	margin-bottom: 15px;
+}
+
+.nav-panel + .content-box {
+	left: calc(25% + 8px);
+	width: calc(75% - 8px);
+}
+
+.collapsible:after {
+	position: absolute;
+	right: 24px;
+	content: '';
+	background: url("../icon/plus_icon.png") no-repeat;
+	background-size: 26px;
+	line-height: 26px;
+	width: 24px;
+	height: 26px;
+}
+
+.collapsible.active:after {
+	content: '';
+	background: url("../icon/minus_icon.png") no-repeat;
+	line-height: 26px;
+	background-size: 26px;
+}
+
+.collapsible {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+.collapsible:hover, .nav-panel .item.active {
+  background-color: #e9ffe6;
+  color: black;
+  transition: background-color 0.5s;
+}
+
+.header-link {
+	text-decoration: none;
+	color: inherit;
+}
+
+.content-link {
+	text-decoration: none;
+	color: inherit;
+}
+
+.content-link:hover, .content-link.active {
+	padding-bottom: 2px;
+	border-bottom: 3px solid green;
+	font-weight: bold;
+}
+
+.nav-panel .item + .content {
+	background-color: rgba(9,222,87,0.25);
+	padding: 2px 8px 6px 8px;
+	border-radius: 20px;
+	border: 2px solid #68d15e;
+	text-shadow: none;
+	box-sizing: border-box;
+	visibility: hidden;
+	opacity: 0;
+	max-height: 0;
+	margin-left: auto;
+	// min-width: calc(15vw - 20px);
+	overflow: hidden;
+	font-size: 14px;
+	text-align: left;
+	line-height: 30px;
+	transition: opacity 1s, visibility 1.25s, max-height 1.25s;
+}
+
+.logout:hover {
+	color: red !important;
+}
+
+.to-top-button {
+	z-index: 1;
+	cursor: pointer;
+	position: fixed;
+	right: 2%;
+	bottom: 20px;
+	border: none;
+	border-radius: 10px;
+	background: rgba(0,0,0,0.25);
+	color: rgba(255,255,255,0.75);
+	padding: 5px;
+}
+
+.to-top-button:active, .to-top-button:focus {
+	outline: none;
+	border: 1px solid rgba(154,255,145,0.75);
+	color: rgba(154,255,145,0.75);
+}

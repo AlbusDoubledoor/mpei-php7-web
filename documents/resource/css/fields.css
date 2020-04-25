@@ -1,0 +1,15 @@
+div.field {
+	padding-bottom: 10px;
+}
+
+div.field label {
+	display: block;
+	float: left;
+	width: 60px;
+	height: 20px;
+}
+
+div.field input:not([type='submit']) {
+	padding: 1px;
+	border: 1px solid black;
+}

@@ -1,0 +1,8 @@
+# servername with port
+localhost:3306
+# username
+root
+# password
+root
+
+***!!! Don't change structure of this file !!!***
