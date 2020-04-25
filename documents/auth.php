@@ -8,7 +8,7 @@
 				echo "<h2><font color='red'>Failed to connect mysql database</font></h2>";
 				exit;
 			}
-			deploy_connection(function(){echo_fail();});
+			deploy_connection(function(){echo_fail();},"AUTHORIZATION");
 			$name = $_POST['username'];
 			$pass =	$_POST['password'];
 			$sql = "SELECT * FROM users WHERE username='".$name."' and password='".$pass."'";
@@ -21,17 +21,21 @@
 			{
 				if(isset($_POST['remember'])&&$_POST['remember']==true)
 				{
+					setcookie("username", $name); 
 					setcookie("role", $instance['role']); 
 				}
 				else {
+					setcookie("username", $name, time()+3600); 
 					setcookie("role", $instance['role'], time()+3600); 
 				}
+				log_put("Authorization: USER <".$name."> IP [".$_SERVER['REMOTE_ADDR']."] log-in");
 				header("Location: index.php");
 				exit;		
 			}
 			else
 			{
 				echo "<h2 align=center><font color='red'>Incorrect login or password</font></h2>";
+				log_put("Authorization: USER <".$name."> not found");
 			}
 		}
 	}

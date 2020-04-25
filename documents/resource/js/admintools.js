@@ -1,3 +1,11 @@
+function validate_my_files() {
+	let userfile = document.getElementsByName('userfile');
+	if (userfile[0].value.length == 0) {
+		alert('Файл не выбран');
+		return false;
+	}
+	return true;
+}
 // Add/delete register record
 var rec_count = 1;
 function add_record() {

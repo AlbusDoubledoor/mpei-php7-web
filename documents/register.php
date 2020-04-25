@@ -20,7 +20,7 @@
 			exit;
 		}
 		
-		deploy_connection(function(){echo_fail();});
+		deploy_connection(function(){echo_fail();},"USER REGISTRATION");
 		$sql="START TRANSACTION";
 		if (!$connection->query($sql))
 		{

@@ -9,6 +9,7 @@ if %1==launch goto start_service
 echo "Command?"
 set /p command=
 if %command%==start goto start_service
+if %command%==mysql goto mysql-console
 if %command%==stop goto stop_service
 if %command%==stopexit goto stop_service
 if %command%==exit! exit
@@ -28,6 +29,11 @@ net start ApacheHTTPServer
 net start mysql80
 cls
 echo "Сервисы запущены"
+goto mainloop
+
+:mysql-console
+cd "C:/Program Files/MySQL/MySQL Server 8.0/bin"
+mysql.exe -uroot -proot
 goto mainloop
 
 pause

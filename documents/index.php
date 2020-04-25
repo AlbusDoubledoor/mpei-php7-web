@@ -1,7 +1,10 @@
 <?php 	
+	include_once 'deploy_connection.php';
 	// Initiliaze script
 	if(isset($_GET['mode']) && $_GET['mode']=='exit')
 	{
+	    log_put("Authorization: USER <".$_COOKIE['username']."> IP [".$_SERVER['REMOTE_ADDR']."] log-out");
+		setcookie("username","",time()-3600);
 		setcookie("role","",time()-3600);
 		unset($_COOKIE);
 	}
@@ -12,13 +15,12 @@
 			exit;
 		}
 	$scrname = $_SERVER['PHP_SELF'];
-	include_once 'deploy_connection.php';
 	function echo_fail() {
 		echo "<h2><font color='red'>Failed to connect mysql database</font></h2>";
 		exit;
 	}
 	
-	deploy_connection(function(){echo_fail();});
+	deploy_connection(function(){echo_fail();},"MAIN PAGE");
 	if ($_COOKIE['role']=='admin')
 		$admintools = true;
 	else
@@ -76,7 +78,7 @@
 						log_put("ERROR! Failed to load containers: [".$connection->errno."] ".$connection->error);
 					}
 					else {
-						$sql = "SELECT * FROM articles ORDER B article_sort_order";
+						$sql = "SELECT * FROM articles ORDER BY article_sort_order";
 						if (!$result_articles = $connection->query($sql)) {
 							echo "<h2><font color='red'>Failed to execute query for articles</font></h2>";
 							log_put("ERROR! Failed to load articles: [".$connection->errno."] ".$connection->error);
@@ -116,9 +118,7 @@
 						}
 						if ($admintools && $_GET['mode'] == "admintools")
 						{
-							$admtools_html = file("admintools.html");
-							foreach($admtools_html as $str)
-								echo $str;
+							include_once "admintools.php";
 						}
 				?></div>
 			</div>
