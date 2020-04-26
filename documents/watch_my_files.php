@@ -20,6 +20,9 @@
 		}
 		
 		$userdir = "uploads/".$_COOKIE['username'];
+		if (!file_exists("uploads"))
+			mkdir("uploads");
+		
 		if (!file_exists($userdir))
 			mkdir($userdir);
 		
@@ -36,8 +39,8 @@
 			if ($instance != "." && $instance != "..")
 			{
 				++$count;
-				echo $instance."<a class='download-file' download href='".$userdir."/".$instance."'>Скачать файл</a>";
-				echo "	<a class='delete-file' target='_self' href='?file=".$instance."'>Удалить файл</a><br>";
+				echo "<label class='file-name'>$instance</label>	<a class='link-file-operation' download href='".$userdir."/".$instance."'>Скачать файл</a>";
+				echo "	<a class='link-file-operation' target='_self' href='?file=".$instance."'>Удалить файл</a><br>";
 			}
 		}
 		if ($count == 0)

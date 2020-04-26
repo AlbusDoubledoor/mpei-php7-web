@@ -1,11 +1,12 @@
 # Component versions
 
-Apache:   	2.4 (Win64)
-MySQL:    	8.0
-PHP:      	7.4.2
-phpMyAdmin:	4.9.4
-DB Client:	libmysql - mysqlnd 7.4.2
-CKEditor:	4.14.0
+		min		max
+Apache:   	2.2		2.4
+MySQL:    	5.35		8.0
+PHP:      	7.3		7.4.2
+phpMyAdmin:			4.9.4
+DB Client:			7.4.2	libmysql - mysqlnd
+CKEditor:	4.14.0		4.14.0
 
 PHP extensions:
 - mysqli

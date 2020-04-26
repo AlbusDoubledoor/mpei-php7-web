@@ -16,7 +16,6 @@
 			global $connection;
 			$msg = get_err_msg("connection");
 			print($msg);
-			log_put($msg);
 			exit;
 		}
 		
@@ -26,7 +25,7 @@
 		{
 			$msg = get_err_msg("query");
 			print($msg);
-			log_put($msg);
+			log_put("[USER REGISTRATION] ".$msg);
 			exit;
 		}
 		else

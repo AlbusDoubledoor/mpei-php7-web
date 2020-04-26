@@ -1,0 +1,13 @@
+.file-name {
+	display: inline-block;
+	min-width: 100px;
+}
+
+.link-file-operation {
+	margin-left: 20px;
+	color: #345ceb;
+}
+
+.link-file-operation:hover {
+	color: #37ed3d;
+}

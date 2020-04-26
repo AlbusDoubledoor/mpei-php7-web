@@ -1,0 +1,25 @@
+@import "/resource/css/container_form.css";
+@import "/resource/css/file_form.css";
+@import "/resource/css/register_form.css";
+
+.ckeditor-wrapper {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.article-fields {
+	padding: 5px;
+	visibility: hidden;
+	max-height: 0;
+	font-size: 14px;
+	text-shadow: none;
+}
+
+.article-fields label {
+	display: inline-block;
+	width: 90px;
+}
+
+.hidden-option {
+	visibility: hidden;
+}

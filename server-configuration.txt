@@ -65,4 +65,5 @@ C:/web/documents/tmp -> служебна€ директори€ дл€ временной закачки файлов при PO
 
 phpMyAdmin -> root/root
 mysql php7lessons -> root/root
-учетна€ запись на сайте -> root/root
+учетна€ запись на сайте с админ-правами -> root/root
+учетна€ запись без админ-прав -> user/user

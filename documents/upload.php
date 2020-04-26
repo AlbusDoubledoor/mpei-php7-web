@@ -26,27 +26,29 @@
 				$uploaddir = 'uploads/no.user/';
 			}
 			
-			$uploadfile = $uploaddir.basename($_FILES['userfile']['name']);
+			foreach($_FILES['userfile']['error'] as $key=>$error) {
+				$uploadfile = $uploaddir.basename($_FILES['userfile']['name'][$key]);
 
-			echo "<pre>";
-			if (move_uploaded_file($_FILES['userfile']['tmp_name'], $uploadfile)) {
-				echo "Файл корректен и был успешно загружен.\n";
-				echo "Путь к файлу: ".$uploadfile."\n";
-				echo "\n\n<a href='watch_my_files.php'>Мои файлы</a>\n";
-				log_put("[SUCCESS UPLOAD] ".$uploadfile." ".$_FILES['userfile']['size']." bytes");
-			} else {
-				echo "Ошибка загрузки файла.\n";
-				if ($_FILES['userfile']['size'] == 0)
-				{
-					echo "Файл слишком большой.\n";
-					log_put("[ERROR UPLOAD] File is too large.");
+				echo "<pre>";
+				if (move_uploaded_file($_FILES['userfile']['tmp_name'][$key], $uploadfile)) {
+					echo "Файл корректен и был успешно загружен.\n";
+					echo "Путь к файлу: ".$uploadfile."\n";
+					log_put("[SUCCESS UPLOAD] ".$uploadfile." ".$_FILES['userfile']['size'][$key]." bytes");
+				} else {
+					echo "Ошибка загрузки файла.\n";
+					if ($_FILES['userfile']['size'][$key] == 0)
+					{
+						echo "Файл слишком большой.\n";
+						log_put("[ERROR UPLOAD] File is too large.");
+					}
+					else
+					{
+						log_put("[ERROR UPLOAD] ".$uploaddir." ".$_FILES['userfile']['size'][$key]);
+					}
 				}
-				else
-				{
-					log_put("[ERROR UPLOAD] ".$uploaddir." ".$_FILES['userfile']['size']);
-				}
+				echo "</pre>";
 			}
-			echo "</pre>";
+			echo "\n\n<a href='watch_my_files.php'>Мои файлы</a>\n";
 	?>
 	<button onclick='window.close()' style="position: absolute; bottom:10px; right:10px">Закрыть</button>
 	</body>

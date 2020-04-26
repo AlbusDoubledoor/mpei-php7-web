@@ -86,13 +86,9 @@
 						while ($row_container =  $result_containers->fetch_assoc())
 						{
 							echo "<div class='item collapsible";
-							$is_first = true;
+							if (isset($_GET['container']) && $_GET['container'] == $row_container['container_id']) { echo " active";}
+							echo "'>".$row_container['container_title']."</div><div class='content'>";
 							while($row_article = $result_articles->fetch_assoc()) {
-								if ($is_first) {
-								if (isset($_GET['container']) && ($_GET['container'] == $row_article['container_id'])) { echo " active";}
-								echo "'>".$row_container['container_title']."</div><div class='content'>";
-								$is_first = false;
-								}
 								echo "<a class='content-link".(isset($_GET['article'])&&$row_article['article_id']==$_GET['article']? " active":"")."' href='".$scrname."?mode=view_article&container=".$row_container['container_id']."&article=".$row_article['article_id']."'>".$row_article['article_title']."</a><br>";
 							}
 							echo "</div>";

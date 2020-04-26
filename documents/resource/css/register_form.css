@@ -37,23 +37,7 @@
 	cursor: pointer;
 }
 
-.more-button {
-	cursor: pointer;
-	border: none;
-	border-radius: 10px;
-	background: green;
-	color: rgb(255,255,255);
+.register-buttons {
 	padding: 5px;
-	box-sizing: border-box;
+	margin-bottom: 5px;
 }
-
-.more-button:active {
-	outline: none;
-	border: 1px solid rgb(154,255,145);
-	color: rgb(154,255,145);
-}
-
-.more-button:focus {
-	outline: none;
-}
-

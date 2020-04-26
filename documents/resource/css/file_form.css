@@ -1,0 +1,31 @@
+.file-instance {
+	margin-top: 5px;
+	font-size: 16px;
+	position: relative;
+	box-sizing: border-box;
+	padding: 5px;
+	width: 278px;
+}
+
+.delete-icon {
+	position: absolute;
+	top: 7px;	
+	right: 0;
+	cursor: pointer;
+}
+
+.file-form {
+	padding: 5px;
+	margin-top: 10px;
+	position: relative;
+}
+
+.file-form input[type='submit'] {
+	margin-top: 10px;
+}
+
+#myfiles {
+	position: absolute;
+	top: 0;
+	right: 0;
+}

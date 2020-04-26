@@ -25,7 +25,7 @@
 		$db_name = trim($config[7]);
 		$connection = new mysqli($server_db,$user_db,$pass_db,$db_name);
 		if ($connection->connect_errno) {
-				log_put("[$invoke_point] Connection failed: ".$connection->connect_error);
+				log_put("[$invoke_point] Connection to database failed: [".$connection->connect_errno."] ".$connection->connect_error);
 				$error_function();
 		}
 		$connection -> set_charset("utf8");
