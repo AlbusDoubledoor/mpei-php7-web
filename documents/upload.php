@@ -15,10 +15,12 @@
 
 			if (!file_exists("uploads"))
 				mkdir("uploads");
+			$hashed = "";
 			if (isset($_COOKIE['username']))
 			{
-				if(!file_exists("uploads/".$_COOKIE['username'])) mkdir("uploads/".$_COOKIE['username']);
-				$uploaddir = 'uploads/'.$_COOKIE['username'].'/';
+				$hashed = hash('md5',$_COOKIE['username']);
+				if(!file_exists("uploads/".$hashed)) mkdir("uploads/".$hashed);
+				$uploaddir = 'uploads/'.$hashed.'/';
 			}
 			else if (!file_exists("uploads/no.user"))
 			{

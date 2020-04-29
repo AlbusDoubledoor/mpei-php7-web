@@ -7,7 +7,7 @@
 	width: 278px;
 }
 
-.delete-icon {
+.file-form .delete-icon {
 	position: absolute;
 	top: 7px;	
 	right: 0;
@@ -24,7 +24,7 @@
 	margin-top: 10px;
 }
 
-#myfiles {
+.myfiles {
 	position: absolute;
 	top: 0;
 	right: 0;

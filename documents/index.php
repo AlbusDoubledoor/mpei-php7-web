@@ -43,9 +43,9 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 		<title>PHP7 Уроки</title>
 		<link rel="stylesheet" type="text/css" href="/resource/css/main.css">
+		<link rel="stylesheet" type="text/css" href="/resource/css/buttons.css">
 		<link rel="shortcut icon" href="/resource/icon/favicon.png"> 
-		<script type="text/javascript" src="resource/js/interactive_buttons.js"></script>
-		<script type="text/javascript" src="resource/js/collapsible.js"></script>
+		<script type="text/javascript" src="resource/js/core.js"></script>
 		<script type="text/javascript" src="resource/js/ckeditor/ckeditor.js"></script>
 		<?php if ($admintools) echo "<script type='text/javascript' src='resource/js/admintools.js'></script>"; ?>
 		</head>
@@ -78,16 +78,17 @@
 						log_put("ERROR! Failed to load containers: [".$connection->errno."] ".$connection->error);
 					}
 					else {
-						$sql = "SELECT * FROM articles ORDER BY article_sort_order";
-						if (!$result_articles = $connection->query($sql)) {
-							echo "<h2><font color='red'>Failed to execute query for articles</font></h2>";
-							log_put("ERROR! Failed to load articles: [".$connection->errno."] ".$connection->error);
-						}
 						while ($row_container =  $result_containers->fetch_assoc())
 						{
 							echo "<div class='item collapsible";
 							if (isset($_GET['container']) && $_GET['container'] == $row_container['container_id']) { echo " active";}
 							echo "'>".$row_container['container_title']."</div><div class='content'>";
+							$sql = "SELECT * FROM articles WHERE container_id='".$row_container['container_id']."' ORDER BY article_sort_order";
+							if (!$result_articles = $connection->query($sql)) {
+								echo "<h2><font color='red'>Failed to execute query for articles</font></h2>";
+								log_put("ERROR! Failed to load articles: [".$connection->errno."] ".$connection->error);
+								break;
+							}
 							while($row_article = $result_articles->fetch_assoc()) {
 								echo "<a class='content-link".(isset($_GET['article'])&&$row_article['article_id']==$_GET['article']? " active":"")."' href='".$scrname."?mode=view_article&container=".$row_container['container_id']."&article=".$row_article['article_id']."'>".$row_article['article_title']."</a><br>";
 							}
@@ -99,7 +100,7 @@
 				?>
 				<div class="content-box">
 				<?php
-						if (isset($_GET['article']))
+						if (isset($_GET['mode']) && $_GET['mode']=='view_article' && isset($_GET['article']))
 						{
 							$get_article = mysqli_real_escape_string($connection,$_GET['article']);
 							$sql = "SELECT content FROM articles WHERE article_id='".$get_article."'";
@@ -111,6 +112,14 @@
 								$article = $result->fetch_assoc();
 								echo $article['content'];
 							}
+						}
+						if (isset($_GET['mode']) && $_GET['mode']=='feedback')
+						{
+							include_once "feedback.php";
+						}
+						if (isset($_GET['mode']) && $_GET['mode']=='board')
+						{
+							include_once "board.php";
 						}
 						if ($admintools && $_GET['mode'] == "admintools")
 						{

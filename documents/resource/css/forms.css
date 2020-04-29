@@ -1,25 +1,66 @@
 @import "/resource/css/container_form.css";
-@import "/resource/css/file_form.css";
 @import "/resource/css/register_form.css";
+@import "/resource/css/file_form.css";
 
 .ckeditor-wrapper {
 	margin-top: 5px;
 	margin-bottom: 5px;
 }
 
-.article-fields {
+.board-ckeditor-wrapper {
+	padding: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.article-fields, .board {
 	padding: 5px;
 	visibility: hidden;
 	max-height: 0;
 	font-size: 14px;
-	text-shadow: none;
 }
 
-.article-fields label {
+.article-fields label, .board label {
 	display: inline-block;
 	width: 90px;
 }
 
-.hidden-option {
+.article-fields input[type='text'], .board input[type='text'] {
+	border: 1px solid black;
+}
+
+#sendArticle, .edit-art-wrapper, #delArticle, #delBoard, #editBoardWrapper, #editBoardFields {
 	visibility: hidden;
+}
+
+.edit-art-wrapper, #editBoardFields {
+	max-height: 0;
+	padding: 5px;
+}
+
+.edit-art-wrapper label, #editBoardFields label {
+	width: 150px;
+}
+.edit-art-wrapper input, #editBoardFields input {
+	padding-left: 2px;
+	width: 150px;
+}
+
+select {
+	background-color: rgba(52, 52, 52, 0.8);
+	box-shadow: 0 1px 7px rgba(0, 0, 0, 0.14);
+	padding: 2px;
+	color: white; 
+	border-width: 1.5px;
+	border-color: rgba(52, 52, 52, 0.8);
+}
+
+select > option {
+	line-height: 30px;
+	padding: 5px;
+	background-color: rgba(52, 52, 52, 0.9);
+}
+
+select:hover, select:active, select:focus {
+	outline: none;
 }

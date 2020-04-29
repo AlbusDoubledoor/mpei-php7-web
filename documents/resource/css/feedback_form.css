@@ -1,0 +1,47 @@
+.feedback-form {
+	display: block;
+	padding: 5px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 75%;
+	position: relative;
+}
+
+.feedback-field {
+	display: block;
+	position: relative;
+	left: 0;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.feedback h3 {
+	display: block;
+	text-align: center;
+	position: relative;
+	left: auto;
+	right: auto;
+	font-size: 22px;
+}
+.feedback-field label {
+	display: inline-block;
+	width: 80px;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.feedback-field input:not([type='submit']), .feedback-field textarea {
+	border: 1px solid black;
+}
+
+.feedback-field textarea {
+	position: relative;
+	width: 100%;
+	resize: none;
+	left: 0;
+}
+
+.feedback-field textarea::placeholder {
+	color: gray;
+}
+	
