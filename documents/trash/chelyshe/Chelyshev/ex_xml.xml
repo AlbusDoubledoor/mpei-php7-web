@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes"?>
+<!-- XML пример -->
+<journal>
+<title>Lobachevsky&apos;Journal</title>
+9
+<contacts>
+<address>Kazan State University</address>
+<url>ljm.ksu.ru</url>
+</contacts>
+<articles>
+<article ID="1">
+<title>MathML and TeX</title>
+<author>M. Malakhaltsev</author>
+</article>
+<article ID="2">
+<title>MathML and RDF</title>
+<author>E. Lipachev</author>
+</article>
+</articles>
+</journal>

@@ -38,4 +38,5 @@ CKEDITOR.editorConfig = function( config ) {
 	
 	config.uiColor = '#b3fff6';
 	config.height = 400;  
+	config.extraPlugins = 'codesnippet,panelbutton,colorbutton';
 };

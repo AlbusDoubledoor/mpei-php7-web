@@ -124,7 +124,7 @@ body {
 
 .content-box {
 	position: absolute;
-	word-break: break-all;
+	word-break: normal;
 	left: 0px;
 	width: 100%;
 	top: 230px;
@@ -138,6 +138,14 @@ body {
 	margin-bottom: 15px;
 }
 
+.article {
+	font-size: 16px;
+	font-family: 'Times New Roman';
+}
+
+.article h3, .article h2, .article h1 {
+	font-family: 'Ubuntu', sans-serif;
+}
 .nav-panel + .content-box {
 	left: calc(25% + 8px);
 	width: calc(75% - 8px);

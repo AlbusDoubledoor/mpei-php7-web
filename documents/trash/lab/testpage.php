@@ -3,6 +3,8 @@
 <meta charset="utf-8"/></head>
 <body>
 <?php
+$vasya = "VASYA BOYA";
+echo "Vasya? {$vasya}paper da";
 $idcon = mysqli_connect("localhost:3306","root","root","test");
 echo "<h3>MySQL Connection STATUS:<br>";
 echo $idcon? "<font color=green>SUCCESS</font>": "<font color=red>FAIL</font>";

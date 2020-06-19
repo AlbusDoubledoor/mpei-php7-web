@@ -11,6 +11,14 @@ CKEditor:	4.14.0		4.14.0
 PHP extensions:
 - mysqli
 
+CKEditor plugins:
+- codesnippet
+- panelbutton
+- controlbutton
+
+js:
+- highlight
+
 # Credentials [MySQL]
 
 user:		root

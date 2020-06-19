@@ -1,0 +1,44 @@
+.main-button button, .main-button input[type='submit'] {
+	cursor: pointer;
+	font-weight: 700;
+	color: white;
+	text-decoration: none;
+	padding: .5em 1em calc(.5em + 3px);
+	border: none;
+	border-radius: 3px;
+	background: rgb(64,199,129);
+	box-shadow: 0 -3px rgb(53,167,110) inset;
+	transition: background-color 0.2s;
+}
+
+.main-button button:active,.main-button input[type='submit']:active {
+	background: rgb(33,147,90);
+	box-shadow: 0 3px rgb(33,147,90) inset;
+	outline: none;
+}
+
+.main-button button:hover, .main-button input[type='submit']:hover {
+	background: rgb(53, 167, 110);
+}
+
+.main-button button:focus, .main-button input[type='submit']:focus {
+	outline: none;
+}
+button.special-button, input[type='submit'].special-button {
+	background: #688be3;
+	box-shadow: 0 -3px #5674bf inset;
+}
+
+button.special-button:hover, input[type='submit'].special-button:hover {
+	background: #5674bf;
+}
+
+button.special-button:active, input[type='submit'].special-button:active {
+	background: #5473bf;
+	box-shadow: 0 3px #4d67a8 inset;
+	outline: none;
+}
+
+.special-button button:focus, .special-button input[type='submit']:focus {
+	outline: none;
+}

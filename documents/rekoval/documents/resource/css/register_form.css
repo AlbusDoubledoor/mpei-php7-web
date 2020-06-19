@@ -1,0 +1,43 @@
+@import "fields.css";
+
+.register-form {
+	font-size: 14px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+#register {
+	margin-top: 10px;
+	display: flex;
+	flex: 1;
+	align-items: flex-start;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+}
+
+.register-instance {
+	position: relative;
+	box-sizing: border-box;
+	padding: 10px;
+	width: 192px;
+}
+
+.register-instance label {
+	width: 50px;
+}
+
+.register-instance input {
+	width: 100px;
+}
+
+.register-form .delete-icon {
+	position: absolute;
+	top: 0;
+	right: 0;
+	cursor: pointer;
+}
+
+.register-buttons {
+	padding: 5px;
+	margin-bottom: 5px;
+}

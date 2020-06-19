@@ -60,6 +60,7 @@ CKEDITOR.stylesSet.add( 'default', [
 	*/
 
 	{ name: 'Marker',			element: 'span', attributes: { 'class': 'marker' } },
+    { name: 'Code Element',		element: 'code', styles: { 'border':'1px solid #eaecf0','border-radius':'2px','padding':'1px 4px','background-color': '#f8f9fa' } },
 
 	{ name: 'Big',				element: 'big' },
 	{ name: 'Small',			element: 'small' },
